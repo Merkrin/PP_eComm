@@ -9,13 +9,13 @@
 *.sublime-workspace
 
 # Visual Studio Code
-PPeCommFrontend/.vscode/*
-PPeCommFrontend/!.vscode/settings.json
-PPeCommFrontend/!.vscode/tasks.json
-PPeCommFrontend/!.vscode/launch.json
-PPeCommFrontend/!.vscode/extensions.json
-PPeCommFrontend/!.vscode/mcp.json
-PPeCommFrontend/.history/*
+!**/.vscode/*
+!**/!.vscode/settings.json
+!**/!.vscode/tasks.json
+!**/!.vscode/launch.json
+!**/!.vscode/extensions.json
+!**/!.vscode/mcp.json
+!**/.history/*
 
 # macOS
 .DS_Store
@@ -23,26 +23,61 @@ PPeCommFrontend/.history/*
 # Windows
 Thumbs.db
 
+#Backend
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
 # Frontend
 # Compiled output
-PPeCommFrontend/dist
-PPeCommFrontend/tmp
-PPeCommFrontend/out-tsc
-PPeCommFrontend/bazel-out
+!**/dist
+!**/tmp
+!**/out-tsc
+!**/bazel-out
 
 # Node
-PPeCommFrontend/node_modules
-PPeCommFrontend/npm-debug.log
-PPeCommFrontend/yarn-error.log
+!**/node_modules
+!**/npm-debug.log
+!**/yarn-error.log
 
 # Miscellaneous
-PPeCommFrontend/.angular/cache
-PPeCommFrontend/.sass-cache/
-PPeCommFrontend/connect.lock
-PPeCommFrontend/coverage
-PPeCommFrontend/libpeerconnection.log
-PPeCommFrontend/testem.log
-PPeCommFrontend/typings
-PPeCommFrontend/__screenshots__/
-PPeCommFrontend/.editorconfig
-PPeCommFrontend/.prettierrc
+!**/.angular/cache
+!**/.sass-cache/
+!**/connect.lock
+!**/coverage
+!**/libpeerconnection.log
+!**/testem.log
+!**/typings
+!**/__screenshots__/
+!**/.editorconfig
+!**/.prettierrc

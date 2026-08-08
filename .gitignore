@@ -1,0 +1,48 @@
+# IDE
+*.iml
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+PPeCommFrontend/.vscode/*
+PPeCommFrontend/!.vscode/settings.json
+PPeCommFrontend/!.vscode/tasks.json
+PPeCommFrontend/!.vscode/launch.json
+PPeCommFrontend/!.vscode/extensions.json
+PPeCommFrontend/!.vscode/mcp.json
+PPeCommFrontend/.history/*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Frontend
+# Compiled output
+PPeCommFrontend/dist
+PPeCommFrontend/tmp
+PPeCommFrontend/out-tsc
+PPeCommFrontend/bazel-out
+
+# Node
+PPeCommFrontend/node_modules
+PPeCommFrontend/npm-debug.log
+PPeCommFrontend/yarn-error.log
+
+# Miscellaneous
+PPeCommFrontend/.angular/cache
+PPeCommFrontend/.sass-cache/
+PPeCommFrontend/connect.lock
+PPeCommFrontend/coverage
+PPeCommFrontend/libpeerconnection.log
+PPeCommFrontend/testem.log
+PPeCommFrontend/typings
+PPeCommFrontend/__screenshots__/
+PPeCommFrontend/.editorconfig
+PPeCommFrontend/.prettierrc

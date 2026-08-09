@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {SalesPersonList} from './sales-person-list/sales-person-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [SalesPersonList],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('PPeCommFrontend');

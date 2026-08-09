@@ -60,24 +60,24 @@ build/
 
 # Frontend
 # Compiled output
-!**/dist
-!**/tmp
-!**/out-tsc
-!**/bazel-out
+/PPeCommFrontend/dist
+/PPeCommFrontend/tmp
+/PPeCommFrontend/out-tsc
+/PPeCommFrontend/bazel-out
 
 # Node
-!**/node_modules
-!**/npm-debug.log
-!**/yarn-error.log
+/PPeCommFrontend/node_modules
+/PPeCommFrontend/npm-debug.log
+/PPeCommFrontend/yarn-error.log
 
 # Miscellaneous
-!**/.angular/cache
-!**/.sass-cache/
-!**/connect.lock
-!**/coverage
-!**/libpeerconnection.log
-!**/testem.log
-!**/typings
-!**/__screenshots__/
-!**/.editorconfig
-!**/.prettierrc
+/PPeCommFrontend/.angular/cache
+/PPeCommFrontend/.sass-cache/
+/PPeCommFrontend/connect.lock
+/PPeCommFrontend/coverage
+/PPeCommFrontend/libpeerconnection.log
+/PPeCommFrontend/testem.log
+/PPeCommFrontend/typings
+/PPeCommFrontend/__screenshots__/
+/PPeCommFrontend/.editorconfig
+/PPeCommFrontend/.prettierrc

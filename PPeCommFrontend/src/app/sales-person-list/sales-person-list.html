@@ -16,7 +16,12 @@
     <td>{{salesPerson.lastName}}</td>
     <td>{{salesPerson.email}}</td>
     <td>{{salesPerson.phoneNumber}}</td>
-    <td>{{salesPerson.salesVolume}}</td>
+    <td>{{salesPerson.salesVolume | currency:"EUR"}}</td>
+    @if (salesPerson.salesVolume > 550){
+      <td>Yes</td>
+    } @else {
+      <td>No</td>
+    }
   </tr>
   }
   </tbody>

@@ -1,10 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {SalesPerson} from './sales-person';
+import {CurrencyPipe} from '@angular/common';
 
 @Component({
   selector: 'app-sales-person-list',
   templateUrl: './sales-person-list.html',
   styleUrl: './sales-person-list.css',
+  imports: [CurrencyPipe],
 })
 export class SalesPersonList implements OnInit {
   // dummy list of people

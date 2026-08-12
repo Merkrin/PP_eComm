@@ -11,6 +11,7 @@ The most basic "online shopping" site ever:
 
 ## Almost real "What's new"
 ### V0.2
+A table with data is shown! Truly beautiful and mesmerizing lol
 ### V0.1.1
 It still doesn't do anything useful, but now we have simple bcknd to see even more dummy data from the db, now with the taste of post requests
 ### V0.1.0

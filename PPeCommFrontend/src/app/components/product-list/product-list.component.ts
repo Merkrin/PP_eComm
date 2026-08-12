@@ -1,6 +1,6 @@
 import {Component, OnInit, signal} from '@angular/core';
 import {Product} from '../../common/product';
-import {CurrencyPipe} from '@angular/common';
+import {CurrencyPipe, NgOptimizedImage} from '@angular/common';
 import {ProductService} from '../../services/product.service';
 
 @Component({

@@ -1,0 +1,4 @@
+<p>Test meoww</p>
+@for(product of products(); track $index){
+  <p>{{product.name}}: {{product.price | currency:"EUR"}}</p>
+}

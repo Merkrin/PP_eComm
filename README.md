@@ -5,11 +5,14 @@ Here will be the most boring study project for someone who finally wants to crea
 ### PP_eComm
 The most basic "online shopping" site ever:
 * List of "products"
+  * With search
 * Add/delete/whatever "products" from the cart
 * Almost-real-checkout
 * Login-logout
 
 ## Almost real "What's new"
+### V1.0
+It looks like a website now lol
 ### V0.2
 A table with data is shown! Truly beautiful and mesmerizing lol
 ### V0.1.1

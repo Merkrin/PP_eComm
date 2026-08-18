@@ -83,3 +83,5 @@ build/
 /PPeCommFrontend/.editorconfig
 /PPeCommFrontend/.prettierrc
 
+/temp-create-db.sql
+/temp-update-and-fill-db.sql

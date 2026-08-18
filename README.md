@@ -11,7 +11,9 @@ The most basic "online shopping" site ever:
 * Login-logout
 
 ## Almost real "What's new"
-### V1.0
+### V0.3.1
+Added routing with findByCategory to make it look like a real website with categorized goods (me smart)
+### V0.3
 It looks like a website now lol
 ### V0.2
 A table with data is shown! Truly beautiful and mesmerizing lol

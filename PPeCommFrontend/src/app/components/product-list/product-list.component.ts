@@ -12,6 +12,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductListComponent implements OnInit {
   currentCategoryId: number = 1;
+  //Default value
+  currentCategoryName: string = "All";
+
   products = signal<Product[]>([]);
 
   constructor(
@@ -29,10 +32,18 @@ export class ProductListComponent implements OnInit {
     if (this.route.snapshot.paramMap.has('id') && this.route.snapshot.paramMap.get('id') != null) {
       // + converts a string to a number
       this.currentCategoryId = +this.route.snapshot.paramMap.get('id')!;
-    }
+      this.currentCategoryName = this.route.snapshot.paramMap.get('categoryName')!;
 
-    this.productService.getProductList(this.currentCategoryId).subscribe((data) => {
-      this.products.set(data);
-    });
+      this.productService.getProductListByCategory(this.currentCategoryId).subscribe((data) => {
+        this.products.set(data);
+      });
+    }else{
+      // If something went wrong
+      this.currentCategoryName = "All";
+
+      this.productService.getAllProductList().subscribe((data) => {
+        this.products.set(data);
+      });
+    }
   }
 }

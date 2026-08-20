@@ -23,9 +23,12 @@ public class CustomRestConfig implements RepositoryRestConfigurer {
 
         disableHttpMethodsForClass(Product.class, unsupportedMethods, config);
         disableHttpMethodsForClass(ProductCategory.class, unsupportedMethods, config);
+
+        config.exposeIdsFor(ProductCategory.class);
     }
 
-    private void disableHttpMethodsForClass(Class<?> clazz, HttpMethod[] unsupportedMethods, RepositoryRestConfiguration config) {
+    private void disableHttpMethodsForClass(Class<?> clazz, HttpMethod[] unsupportedMethods,
+            RepositoryRestConfiguration config) {
         config.getExposureConfiguration()
                 .forDomainType(clazz)
                 .withItemExposure((metadata, httpMethods) -> httpMethods.disable(unsupportedMethods))

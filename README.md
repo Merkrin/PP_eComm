@@ -11,9 +11,11 @@ The most basic "online shopping" site ever:
 * Login-logout
 
 ## Almost real "What's new"
+### V0.3.2
+Made categories list dynamic based on the db categories table
 ### V0.3.1
 Added routing with findByCategory to make it look like a real website with categorized goods (me smart)
-### V0.3
+### V0.3.0
 It looks like a website now lol
 ### V0.2
 A table with data is shown! Truly beautiful and mesmerizing lol

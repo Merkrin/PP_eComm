@@ -32,9 +32,7 @@ export class ProductListComponent implements OnInit {
     }
 
     this.productService.getProductList(this.currentCategoryId).subscribe((data) => {
-      console.log('PRODUCTS FROM BACKEND:', data);
       this.products.set(data);
-      console.log('PRODUCTS IN COMPONENT:', this.products);
     });
   }
 }

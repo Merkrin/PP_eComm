@@ -9,30 +9,30 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name="product")
+@Table(name = "product")
 public class Product {
     @Id
-    @Column(name="id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
-    @Column(name="sku")
+    @Column(name = "sku")
     private String sku;
-    @Column(name="name")
+    @Column(name = "name")
     private String name;
-    @Column(name="description")
+    @Column(name = "description")
     private String description;
-    @Column(name="image_url")
+    @Column(name = "image_url")
     private String imageUrl;
-    @Column(name="price")
+    @Column(name = "price")
     private Integer price;
-    @Column(name="is_active")
+    @Column(name = "is_active")
     private Boolean isActive;
-    @Column(name="units_in_stock")
+    @Column(name = "units_in_stock")
     private Integer unitsInStock;
-    @Column(name="date_created")
+    @Column(name = "date_created")
     @CreationTimestamp
     private Date dateCreated;
-    @Column(name="last_updated")
+    @Column(name = "last_updated")
     @UpdateTimestamp
     private Date lastUpdated;
     @ManyToOne

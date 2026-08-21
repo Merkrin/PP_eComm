@@ -13,7 +13,8 @@ import { ActivatedRoute } from '@angular/router';
 export class ProductListComponent implements OnInit {
   currentCategoryId: number = 1;
   //Default value
-  currentCategoryName: string = "All";
+  currentCategoryName: string = 'All';
+  isInSearchMode: boolean = false;
 
   products = signal<Product[]>([]);
 
@@ -29,6 +30,16 @@ export class ProductListComponent implements OnInit {
   }
 
   private listProducts() {
+    this.isInSearchMode = this.route.snapshot.paramMap.has('keyword');
+
+    if(this.isInSearchMode) {
+      this.listFilteredProducts();
+    }else {
+      this.listCategorizedProducts();
+    }
+  }
+
+  private listCategorizedProducts(){
     if (this.route.snapshot.paramMap.has('id') && this.route.snapshot.paramMap.get('id') != null) {
       // + converts a string to a number
       this.currentCategoryId = +this.route.snapshot.paramMap.get('id')!;
@@ -37,13 +48,23 @@ export class ProductListComponent implements OnInit {
       this.productService.getProductListByCategory(this.currentCategoryId).subscribe((data) => {
         this.products.set(data);
       });
-    }else{
+    } else {
       // If something went wrong
-      this.currentCategoryName = "All";
+      this.currentCategoryName = 'All';
 
       this.productService.getAllProductList().subscribe((data) => {
         this.products.set(data);
       });
+    }
+  }
+
+  private listFilteredProducts() {
+    if(this.route.snapshot.paramMap.has('keyword') && this.route.snapshot.paramMap.get('keyword')!=null) {
+      const searchKeyword: string = this.route.snapshot.paramMap.get('keyword')!;
+
+      this.productService.getProductListByKeyword(searchKeyword).subscribe((data) => {
+        this.products.set(data);
+      })
     }
   }
 }

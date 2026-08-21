@@ -1035,3 +1035,10 @@ footer ul li{
     padding:8px 0
   }
 }
+
+/*"Override" color scheme for Bootstrap's alert*/
+.updated-colorscheme-alert {
+  --bs-alert-color: #000000;
+  --bs-alert-bg: #bda6ce;
+  --bs-alert-border-color: #9b8ec7;
+}

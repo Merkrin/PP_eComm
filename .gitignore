@@ -85,3 +85,4 @@ build/
 
 /temp-create-db.sql
 /temp-update-and-fill-db.sql
+/notes.md

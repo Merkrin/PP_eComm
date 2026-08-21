@@ -11,6 +11,8 @@ The most basic "online shopping" site ever:
 * Login-logout
 
 ## Almost real "What's new"
+### V0.4
+Added very basic keyword search through the search form. To be updated to more intelligent versions somewhere in the farthest future
 ### V0.3.2
 Made categories list dynamic based on the db categories table
 ### V0.3.1

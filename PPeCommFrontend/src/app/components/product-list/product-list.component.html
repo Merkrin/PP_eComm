@@ -13,6 +13,13 @@
           </div>
         }
       </div>
+
+      <!-- Show message if no products found -->
+      @if (products()?.length == 0){
+        <div class="alert alert-warning updated-colorscheme-alert col-md-12" role="alert">
+          No products found.
+        </div>
+      }
     </div>
   </div>
 </div>
